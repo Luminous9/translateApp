@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Translate</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="main view">
+        <div class="wrapper">
+            <h1>Broken Translations</h1>
+            <button class="lyrics-view-button ui primary basic button">Lyrics Game</button>
+            <button class="translate-view-button ui green basic button">Translate Something</button>
+        </div>
+    </div>
+    <div class="lyrics-game view hidden">
+        <div class="wrapper">
+            <h2>Lyrics Game</h2>
+            <p>Guess Which Disney Song this is!</p>
+            <div class="lyrics">
+                
+            </div>
+            <div class="message">
+                <p> </p>
+            </div>
+            <form id="guessSong" action="">
+                <label for="guess"></label>
+                <input name="guess" type="text">
+                <button>Submit</button>
+            </form>
+            <div>
+                <button class="newGame">New Game</button>
+                <button class="main-view-button">Home</button>
+            </div>
+        </div>
+    </div>
+    <div class="translate view hidden">
+        <div class="wrapper">
+            <form action="" id="translate">
+                <textarea name="text" id="" placeholder="Enter something here"></textarea>
+                <button disabled>Go</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='scripts/script.js'></script>
+</body>
+
+</html>
